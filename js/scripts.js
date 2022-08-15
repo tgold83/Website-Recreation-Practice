@@ -2,8 +2,6 @@ window.onload = function() {
 const firstHeader = document.querySelector("h1");
 firstHeader.remove('Favorite Things!');
 
-
-
 const updatedFirstHeader = document.createElement("h1");
 updatedFirstHeader.append("Webpage Recreation Practice");
 
@@ -24,10 +22,14 @@ const liTwo = document.createElement("li");
 liOne.append("It is endemic to the mountains of Colombia.");
 liTwo.append("It usually searches for insects on the underside of leaves of outer limbs while clinging to leaves with its feet.");
 
+const websiteHeader = document.createElement("h2");
+websiteHeader.append("Source");
 
-
+const website = document.createElement("a");
+website.append("Wikipedia");
+website.href ="https://en.wikipedia.org/wiki/Multicoloured_tanager";
 
 const mainBody = document.querySelector("body");
-mainBody.append(updatedFirstHeader, onlyParagraph, picture, secondHeader, ul, liOne, liTwo);
+mainBody.append(updatedFirstHeader, onlyParagraph, picture, secondHeader, ul, liOne, liTwo, websiteHeader, website);
 }
 
